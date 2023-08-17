@@ -1,0 +1,29 @@
+.item {
+  padding-left: 25px;
+  width: 500px;
+  border: 1px solid #111111;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: aqua;
+  margin-top: 40px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+.name {
+  font-size: 36px;
+  font-weight: bold;
+}

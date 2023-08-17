@@ -1,5 +1,9 @@
 import user from '../components/user.json';
-import { Profile } from './Profile.js/Profile';
+import { Profile } from './Profile/Profile';
+import { Statistics, getRandomHexColor } from './Statistics/Statistics';
+import data from '../components/data.json';
+import friends from '../components/friends.json';
+import { FriendsList } from './FriendsList/FriendsList';
 
 export const App = () => {
   return (
@@ -11,17 +15,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendsList friends={friends} />
     </div>
-    //   style={{
-    //     height: '100vh',
-    //     display: 'flex',
-    //     justifyContent: 'center',
-    //     alignItems: 'center',
-    //     fontSize: 40,
-    //     color: '#010101'
-    //   }}
-    // >
-    //   React homework template
-    // </div>
   );
 };
