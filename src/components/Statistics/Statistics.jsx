@@ -29,7 +29,7 @@ export function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-Statistics.proptypes = {
+Statistics.propTypes = {
   stats: PropTypes.shape({
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
