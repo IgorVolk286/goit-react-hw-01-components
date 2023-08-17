@@ -21,7 +21,11 @@ export const FriendsList = ({ friends }) => {
     </div>
   );
 };
-// name={friend.name}
-//             avatar={friend.avatar}
-//             id={friend.id}
-//             status={friend.status}
+FriendsList.propTypes = {
+  friends: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+  }),
+};

@@ -1,6 +1,6 @@
 import user from '../components/user.json';
 import { Profile } from './Profile/Profile';
-import { Statistics, getRandomHexColor } from './Statistics/Statistics';
+import { Statistics } from './Statistics/Statistics';
 import data from '../components/data.json';
 import friends from '../components/friends.json';
 import { FriendsList } from './FriendsList/FriendsList';

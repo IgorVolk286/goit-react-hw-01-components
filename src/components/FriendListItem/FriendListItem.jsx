@@ -12,3 +12,9 @@ export const FriendListItem = ({ id, name, status, avatar }) => {
     </>
   );
 };
+FriendListItem.proptypes = {
+  name: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+};
