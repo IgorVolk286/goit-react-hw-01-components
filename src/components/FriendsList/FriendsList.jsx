@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import css from './friendsList.module.css';
+// import PropTypes from 'prop-types';
+// import css from './friendsList.module.css';
 import { FriendListItem } from 'components/FriendListItem/FriendListItem';
 import { ListWrap } from './FriendsList.styled';
 
