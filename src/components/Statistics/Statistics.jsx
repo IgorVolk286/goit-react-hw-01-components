@@ -33,13 +33,13 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-Statistics.propTypes = {
-  stats: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    percentag: PropTypes.number.isRequired,
-  }),
-};
+// Statistics.propTypes = {
+//   stats: PropTypes.shape({
+//     id: PropTypes.string.isRequired,
+//     label: PropTypes.string.isRequired,
+//     percentag: PropTypes.number.isRequired,
+//   }),
+// };
 
 ///// css on modules//////
 
