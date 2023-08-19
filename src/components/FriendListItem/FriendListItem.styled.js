@@ -18,6 +18,10 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
   margin-top: 40px;
+  border-radius: 50%;
+  background: ${props => {
+    return props.isonline ? 'green' : 'red';
+  }};
 `;
 export const Avatar = styled.img`
   width: 100px;

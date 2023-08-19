@@ -1,48 +1,51 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import React from 'react';
 // import css from './TransactionHistory.module.css';
 import {
   TransactionHistoryTabl,
-  Tablthead,
-  Tabltr,
+  Thead,
+  TrBody,
+  TablBody,
+  TablTh,
   TablTd,
 } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ item }) => {
-  console.log(item);
   return (
     <TransactionHistoryTabl>
-      <Tablthead>
+      <Thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <TablTh>Type</TablTh>
+          <TablTh>Amount</TablTh>
+          <TablTh>Currency</TablTh>
         </tr>
-      </Tablthead>
+      </Thead>
 
-      <tbody>
+      <TablBody>
         {item.map(({ id, type, amount, currency }) => {
           return (
-            <Tabltr key={id}>
+            <TrBody key={id}>
               <TablTd>{type}</TablTd>
               <TablTd>{amount}</TablTd>
               <TablTd>{currency}</TablTd>
-            </Tabltr>
+            </TrBody>
           );
         })}
-      </tbody>
+      </TablBody>
     </TransactionHistoryTabl>
   );
 };
 
-// TransactionHistory.propTypes = {
-//   item: PropTypes.shape({
-//     id: PropTypes.string.isRequired,
-//     type: PropTypes.string.isRequired,
-//     amount: PropTypes.number.isRequired,
-//     currency: PropTypes.string.isRequired,
-//   }),
-// };
+TransactionHistory.propTypes = {
+  item: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
+};
 
 //// css on modules/////
 
