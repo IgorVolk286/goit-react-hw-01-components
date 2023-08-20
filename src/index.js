@@ -6,8 +6,9 @@ import './index.css';
 
 const theme = {
   colors: {
-    white: 'white',
-    black: 'black',
+    white: `#ffffff`,
+    black: `#111111`,
+    gray: `#f6f6f6`,
   },
 };
 ReactDOM.createRoot(document.getElementById('root')).render(

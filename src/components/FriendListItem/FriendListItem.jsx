@@ -6,7 +6,7 @@ export const FriendListItem = ({ id, name, avatar, isOnline }) => {
   return (
     <>
       <Item key={id}>
-        <Status isonline={isOnline}>{isOnline} </Status>
+        <Status $isonline={isOnline}>{isOnline} </Status>
         <Avatar src={avatar} alt="User avatar" width="48" />
         <Name>{name}</Name>
       </Item>

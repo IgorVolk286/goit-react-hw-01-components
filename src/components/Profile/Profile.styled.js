@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProfileWrap = styled.div`
   width: 500px;
-  height: 600px;
+  height: 580px;
   background-color: ${props => props.theme.colors.white};
 
   margin-left: auto;
@@ -46,20 +46,23 @@ export const Location = styled.p`
   color: gray;
 `;
 export const Stats = styled.ul`
-  height: 160px;
+  height: 140px;
   display: flex;
-  list-style: none;
   background-color: #f6f6f6;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 `;
 export const Item = styled.li`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  height: 140px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: calc(100% / 3);
+  flex-basis: calc(100% / 3);
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
 `;
 export const Label = styled.span`
   font-size: 24px;
