@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const ProfileWrap = styled.div`
   width: 500px;
   height: 600px;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.colors.white};
 
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid #111;
+  border: 2px solid ${props => props.theme.colors.black};
   border-radius: 5px;
 `;
 export const Description = styled.div`

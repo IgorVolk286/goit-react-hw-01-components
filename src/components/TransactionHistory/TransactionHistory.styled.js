@@ -17,10 +17,9 @@ export const Thead = styled.thead`
 `;
 
 export const TrBody = styled.tr`
-  border: 5px solid;
-  background-color: lightgray;
+  border: 1px solid black;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: capitalize;
   height: 60px;
   text-align: center;
@@ -29,8 +28,8 @@ export const TrBody = styled.tr`
 export const TablBody = styled.tbody``;
 
 export const TablTh = styled.th`
-  border: 2px solid black;
+  border: 1px solid black;
 `;
 export const TablTd = styled.td`
-  border: 2px solid black;
+  border-right: 1px solid black;
 `;

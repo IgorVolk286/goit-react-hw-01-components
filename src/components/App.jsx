@@ -6,10 +6,12 @@ import friends from '../components/friends.json';
 import { FriendsList } from './FriendsList/FriendsList';
 import transactions from '../components/transactions.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { GlobalStyle } from './GlobalStyles';
+import { Layout } from './Layout';
 
 export const App = () => {
   return (
-    <div>
+    <Layout>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -20,6 +22,7 @@ export const App = () => {
       <Statistics title="Upload stats" stats={data} />
       <FriendsList friends={friends} />
       <TransactionHistory item={transactions} />
-    </div>
+      <GlobalStyle />
+    </Layout>
   );
 };
